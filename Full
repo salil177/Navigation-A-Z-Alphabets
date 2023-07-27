@@ -1,0 +1,279 @@
+<style>
+        .AZMenu0{
+            display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: scroll;
+    list-style: none;
+    padding-left: 0px;
+    padding: 24px 0;
+        }
+
+  .AZMenu0::-webkit-scrollbar{
+    width: 0;
+  height: 0;
+  }
+
+  .section-divide{
+    padding:30px 0px;
+
+  }
+
+  .section-divide:last-child{
+    border-bottom:0px;
+  }
+  
+  .section-divide-ul li{
+    padding:20px 0px;
+  }
+
+  .DesignerList0__head{
+    margin:50px 0px 30px 0px;
+    text-align:center;
+  }
+
+  .DesignerList0__letterIndex{
+    border-bottom: 1px solid #243234;
+    border-top: 1px solid #243234;
+    position:sticky;
+  }
+
+  .a-z-list-letters{
+    position:relative;
+  }
+  
+  .a-z-list-letters:before{
+   content: "";
+    background-color: black;
+    height: 100%;
+    width: 7px;
+    position: absolute;
+    left: -30px;
+  }
+
+  .AZMenu0__initial{
+    min-width:30px;
+  }
+
+
+
+  @media only screen and (min-width:1020px){
+
+    .section-divide{
+        break-inside: avoid-column;
+  }
+
+    .a-z-all-list-inner{
+    column-count: 4;
+  }
+  }
+
+
+  @media only screen and (max-width:1350px){
+      .section-divide{
+    padding:30px;
+  }
+
+  }
+
+  #filters-tab-list{
+    border-bottom: 1px solid #2d2d2d;
+    display: flex;
+    justify-content: center;
+  }
+
+  #filters-tab-list button{
+    border: 1px solid #2d2d2d;
+    border-bottom: none;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 40px;
+  }
+
+  .DesignersDesktop-filterByName{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    border-bottom: 1px solid #243234;
+  }
+
+  #searchInput{
+        width: 200px;
+    padding:0px;
+    border:0px;
+  }
+
+  .new-btn-search{
+    background-color:#171717;
+    color:white;
+  }
+
+    </style>
+
+{% for link in linklists.test.links %}
+  {% if link.links != blank %}
+
+{% if link.title contains "DESIGNERS" %}
+    <div class="a-z-menu">
+        <div class="DesignerList0__head" bis_skin_checked="1">
+          <h2 itemprop="name" class="DesignerList0__header">Designers</h2>
+        </div>
+      
+      <div class="container">
+        <div id="filters-tab-list" role="tablist" class="TabList" bis_skin_checked="1">
+          <button id="filters-tab-0" type="button" role="tab" aria-controls="filters-tab-panel-0" aria-selected="true" tabindex="0" class="Tab"><span>A-Z Designers </span></button>
+          <button id="filters-tab-2" type="button" role="tab" aria-controls="filters-tab-panel-2" aria-selected="false" tabindex="-1" class="Tab"><span>Search By Name</span></button>
+        </div>
+        <div class="DesignersDesktop-filterByName" bis_skin_checked="1" style="display:none;">
+          <input id="searchInput" type="text" placeholder="Search from 100+ designers">
+        </div>
+        <div class="DesignerList0__letterIndex" bis_skin_checked="1">
+          <ul class="AZMenu0">
+            <li class="AZMenu0__initial"><a href="#A" class="AZMenu0__link">A</a></li>
+            <li class="AZMenu0__initial"><a href="#B" class="AZMenu0__link">B</a></li>
+            <li class="AZMenu0__initial"><a href="#C" class="AZMenu0__link">C</a></li>
+            <li class="AZMenu0__initial"><a href="#D" class="AZMenu0__link">D</a></li>
+            <li class="AZMenu0__initial"><a href="#E" class="AZMenu0__link">E</a></li>
+            <li class="AZMenu0__initial"><a href="#F" class="AZMenu0__link">F</a></li>
+            <li class="AZMenu0__initial"><a href="#G" class="AZMenu0__link">G</a></li>
+            <li class="AZMenu0__initial"><a href="#H" class="AZMenu0__link">H</a></li>
+            <li class="AZMenu0__initial"><a href="#I" class="AZMenu0__link">I</a></li>
+            <li class="AZMenu0__initial"><a href="#J" class="AZMenu0__link">J</a></li>
+            <li class="AZMenu0__initial"><a href="#K" class="AZMenu0__link">K</a></li>
+            <li class="AZMenu0__initial"><a href="#L" class="AZMenu0__link">L</a></li>
+            <li class="AZMenu0__initial"><a href="#M" class="AZMenu0__link">M</a></li>
+            <li class="AZMenu0__initial"><a href="#N" class="AZMenu0__link">N</a></li>
+            <li class="AZMenu0__initial"><a href="#O" class="AZMenu0__link">O</a></li>
+            <li class="AZMenu0__initial"><a href="#P" class="AZMenu0__link">P</a></li>
+            <li class="AZMenu0__initial"><a href="#Q" class="AZMenu0__link">Q</a></li>
+            <li class="AZMenu0__initial"><a href="#R" class="AZMenu0__link">R</a></li>
+            <li class="AZMenu0__initial"><a href="#S" class="AZMenu0__link">S</a></li>
+            <li class="AZMenu0__initial"><a href="#T" class="AZMenu0__link">T</a></li>
+            <li class="AZMenu0__initial"><a href="#U" class="AZMenu0__link">U</a></li>
+            <li class="AZMenu0__initial"><a href="#V" class="AZMenu0__link">V</a></li>
+            <li class="AZMenu0__initial"><a href="#W" class="AZMenu0__link">W</a></li>
+            <li class="AZMenu0__initial"><a href="#X" class="AZMenu0__link">X</a></li>
+            <li class="AZMenu0__initial"><a href="#Y" class="AZMenu0__link">Y</a></li>
+            <li class="AZMenu0__initial"><a href="#Z" class="AZMenu0__link">Z</a></li>
+          </ul>
+        </div>
+
+
+<div class="a-z-all-list-inner">
+{%- assign starting_letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" | split: "" -%}
+
+        {%- for letter in starting_letters -%}
+        {%- capture grouped_childlinks -%}
+            {%- for childlink in link.links -%}
+                {%- assign first_letter = childlink.title | slice: 0, 1 | upcase -%}
+                {%- if first_letter == letter -%}
+                    <li class="designer-item">{{ childlink.title }}</li>
+                {%- endif -%}
+            {%- endfor -%}
+        {%- endcapture -%}
+
+        {%- if grouped_childlinks != "" -%}
+          <div class="section-divide" id="{{ letter }}">
+            <h2 class="a-z-list-letters">{{ letter }}</h2>
+            <ul class="section-divide-ul">
+                {{ grouped_childlinks }}
+            </ul>
+          </div>
+        {%- endif -%}
+    {%- endfor -%}
+
+  </div>
+
+        <div class="no-results" style="display: none; text-align: center;">No results found for "<span id="searchQuery"></span>"</div>
+        
+      </div>
+</div>        
+
+{% endif %}
+                  {%- endif -%}
+    {%- endfor -%}
+
+
+<script>
+const searchInput = document.getElementById('searchInput');
+const designerItems = document.querySelectorAll('.designer-item');
+const sectionDivides = document.querySelectorAll('.section-divide');
+const noResultsMessage = document.querySelector('.no-results');
+const searchQueryElement = document.getElementById('searchQuery');
+
+  const filterByLetterIndex = document.querySelector('.DesignerList0__letterIndex');
+const filterByName = document.querySelector('.DesignersDesktop-filterByName');
+const filterByLetterButton = document.getElementById('filters-tab-0');
+const filterByNameButton = document.getElementById('filters-tab-2');
+
+// Show letter index, hide filter by name by default
+filterByLetterIndex.style.display = 'block';
+filterByName.style.display = 'none';
+filterByLetterButton.classList.add("new-btn-search")
+
+filterByLetterButton.addEventListener('click', function() {
+  filterByLetterIndex.style.display = 'block'; 
+  filterByName.style.display = 'none';
+  filterByLetterButton.classList.add("new-btn-search");
+  filterByNameButton.classList.remove("new-btn-search");
+});
+
+filterByNameButton.addEventListener('click', function() {
+  filterByLetterIndex.style.display = 'none';
+  filterByName.style.display = 'flex'; // Use 'flex' to keep the same layout as before
+  filterByLetterButton.classList.remove("new-btn-search");
+   filterByNameButton.classList.add("new-btn-search");
+});
+
+
+  searchInput.addEventListener('input', function () {
+    const query = searchInput.value.toLowerCase();
+    let noMatchesFound = true;
+
+    designerItems.forEach(item => {
+      const designerName = item.textContent.toLowerCase();
+      if (designerName.includes(query)) {
+        item.style.display = 'block';
+        noMatchesFound = false;
+      } else {
+        item.style.display = 'none';
+      }
+    });
+
+    sectionDivides.forEach(divide => {
+      const ul = divide.querySelector('.section-divide-ul');
+      if (noMatchesFound) {
+        divide.style.display = 'none';
+      } else {
+        const items = ul.querySelectorAll('li');
+        let allHidden = true;
+        items.forEach(item => {
+          if (item.style.display !== 'none') {
+            allHidden = false;
+          }
+        });
+
+        if (allHidden) {
+          divide.style.display = 'none';
+        } else {
+          divide.style.display = 'block';
+        }
+      }
+    });
+
+    // Show or hide the "No results found" message
+    if (noMatchesFound) {
+      noResultsMessage.style.display = 'block';
+      searchQueryElement.textContent = query;
+    } else {
+      noResultsMessage.style.display = 'none';
+    }
+  });
+</script>
+ 
